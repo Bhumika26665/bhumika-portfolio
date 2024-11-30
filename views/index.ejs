@@ -1,19 +1,21 @@
 <%- include('partials/header')-%>
-<div class="w-full">
-  <div class="section-view">
+<div class="  w-full">
+  <div class=" section-view">
       <nav class="bg-white shadow-md py-4">
-          <div class="container mx-auto flex justify-between items-center">
+          <div class="  container mx-auto flex justify-between items-center">
               <div class="text-3xl font-bold font-sofia">
-                  <a href="#" class="text-blue-600">Portfolio</a>
+                 
+                  <img src="../images/logo.jpg" alt="Logo" class="logo">
+
               </div>
 
               <!-- Desktop Menu -->
               <div class="desktop-menu hidden md:flex space-x-6 font-mono text-lg">
-                  <a href="#" class="text-gray-700 hover:text-blue-600">Home</a>
-                  <a href="#" class="text-gray-700 hover:text-blue-600">About Us</a>
-                  <a href="#" class="text-gray-700 hover:text-blue-600">Services</a>
-                  <a href="#" class="text-gray-700 hover:text-blue-600">Projects</a>
-                  <a href="#" class="text-gray-700 hover:text-blue-600">Contact</a>
+                  <a href="#home" class="text-gray-700 hover:text-blue-600">Home</a>
+                  <a href="#about" class="text-gray-700 hover:text-blue-600">About Us</a>
+                  <a href="#service" class="text-gray-700 hover:text-blue-600">Services</a>
+                  <a href="#project" class="text-gray-700 hover:text-blue-600">Projects</a>
+                  <a href="#contact" class="text-gray-700 hover:text-blue-600">Contact</a>
               </div>
 
               <!-- Mobile Menu Button -->
@@ -24,14 +26,15 @@
               </div>
           </div>
       </nav>
+      <div id="home" class="section">
 
       <!-- Mobile Menu -->
       <div id="mobile-menu" class="mobile-menu bg-white shadow-md p-4 md:hidden">
-          <a href="#" class="block py-2 text-gray-700 hover:text-blue-600">Home</a>
-          <a href="#" class="block py-2 text-gray-700 hover:text-blue-600">About Us</a>
-          <a href="#" class="block py-2 text-gray-700 hover:text-blue-600">Services</a>
-          <a href="#" class="block py-2 text-gray-700 hover:text-blue-600">Projects</a>
-          <a href="#" class="block py-2 text-gray-700 hover:text-blue-600">Contact</a>
+          <a href="#home" class="block py-2 text-gray-700 hover:text-blue-600">Home</a>
+          <a href="#about" class="block py-2 text-gray-700 hover:text-blue-600">About Us</a>
+          <a href="#service" class="block py-2 text-gray-700 hover:text-blue-600">Services</a>
+          <a href="#project" class="block py-2 text-gray-700 hover:text-blue-600">Projects</a>
+          <a href="#contact" class="block py-2 text-gray-700 hover:text-blue-600">Contact</a>
       </div>
       <!-- /nav -->
 <!-- section 1 -->
@@ -55,7 +58,7 @@
                                   class="fab fa-github"></i></a>
                       </li>
                       <li>
-                          <a href="https://twitter.com/" aria-label="Twitter"
+                          <a href="https://x.com/pandeyBhumika34" aria-label="Twitter"
                               class="text-2xl text-gray-700 hover:text-blue-600"><i
                                   class="fab fa-twitter"></i></a>
                       </li>
@@ -66,27 +69,32 @@
   </div>
 
 <!-- New Section: 2 About -->
-<div class="section-view2 bg-yellow-200 py-10 h-lvh">
-<div class="container mx-auto flex flex-col-reverse md:flex-row">
-  <div class="flex-shrink-0 md:w-1/2 flex justify-center w-full md:w-3/4 xl:w-[640px] xl:h-[450px]">
-      <img src="your-image-path-here.jpg" alt="Profile Image"
-          class="w-3/4 border-2 border-black shadow-lg">
-  </div>
-  <div class="bg-white shadow-md p-6 md:w-1/2">
-      <h3 class="text-3xl font-semibold">Bhumika Pandey</h3>
-      <h5 class="text-xl mt-4">Freelance Designer</h5>
-      <p class="mt-4">I design and develop services for customers of all sizes, modern websites, web
-          services, and online stores.</p>
-      <p class="mt-2">Looking for an entry-level position where I can utilize all my skills to benefit the company’s profit.</p>
-      <button class="mt-6 px-4 py-2">Contact Us</button>
-  </div>
-</div>
+<div id="about" class="section">
+    <div class="section-view2 bg-gradient-custom py-10 h-lvh ">
+        <div class="container mx-auto flex flex-col-reverse md:flex-row">
+            <div class="flex-shrink-0 md:w-1/2 flex justify-center w-full md:w-3/4 xl:w-[400px] xl:h-[360px]">
+                <img src="https://res.cloudinary.com/dswf2lsf4/image/upload/f_auto,q_auto/n1q9nvsr4qwmpkffkoyr" alt="Profile Image" class="w-3/4 border-2 border-black shadow-lg">
+            </div>
+            <div class="bg-white shadow-md p-6 md:w-1/2">
+                <h3 class="text-3xl font-semibold">Bhumika Pandey</h3>
+                <h5 class="text-xl mt-4">Freelance Designer</h5>
+                <p class="mt-4">I design and develop services for customers of all sizes, modern websites, web services, and online stores.</p>
+                <p class="mt-2">Looking for an entry-level position where I can utilize all my skills to benefit the company’s profit.</p>
+                <div>
+                    <a href="#contact">
+                        <button class="mt-6 px-4 py-2">Contact Us</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 
 </div>
 <!-- section 3 -->
 <!-- Services Section -->
+<div id="service" class="section">
 <section class="py-16 bg-orange-50">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <!-- Section Title -->
@@ -107,9 +115,7 @@
               </div>
               <h3 class="text-2xl font-semibold mb-2">Development</h3>
               <p class="text-gray-600">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                  labore et dolore magna aliqua.
-              </p>
+                Web development involves creating dynamic and engaging websites that meet user needs. I specialize in both frontend and backend technologies, using HTML, CSS, JavaScript, and frameworks like React and Node.js.   </p>
           </div>
 
           <!-- Card 2 -->
@@ -119,8 +125,7 @@
               </div>
               <h3 class="text-2xl font-semibold mb-2">Responsive Design</h3>
               <p class="text-gray-600">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                  labore et dolore magna aliqua.
+                Responsive design is crucial for providing a seamless user experience across devices, enhancing both accessibility and engagement. I utilize HTML, CSS, JavaScript, and frameworks like Bootstrap and Tailwind CSS. my projects,  ensure that layouts adapt perfectly to different screen sizes, using techniques like media queries and flexible layouts. 
               </p>
           </div>
 
@@ -131,8 +136,7 @@
               </div>
               <h3 class="text-2xl font-semibold mb-2">Customized Solutions</h3>
               <p class="text-gray-600">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                  labore et dolore magna aliqua.
+                I specialize in delivering tailored web development solutions that address specific client requirements. By combining technologies such as HTML, CSS, JavaScript, and frameworks like React and Node.js, I create unique applications that enhance user experience and drive engagement.
               </p>
           </div>
 
@@ -143,8 +147,7 @@
               </div>
               <h3 class="text-2xl font-semibold mb-2">Creative Design</h3>
               <p class="text-gray-600">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                  labore et dolore magna aliqua.
+                Creative design is at the heart of my web development process, where I transform ideas into visually engaging and user-friendly interfaces. Creative design is essential in crafting compelling web experiences that resonate with users. I focus on blending aesthetics with functionality, ensuring that every design element enhances usability and reflects the brand's identity.
               </p>
           </div>
 
@@ -155,8 +158,7 @@
               </div>
               <h3 class="text-2xl font-semibold mb-2">Web Design</h3>
               <p class="text-gray-600">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                  labore et dolore magna aliqua.
+                Web design focuses on creating visually stunning and user-friendly websites that effectively communicate a brand’s message. I emphasize clean layouts, intuitive navigation, and responsive design to ensure a seamless experience across devices
               </p>
           </div>
 
@@ -167,8 +169,7 @@
               </div>
               <h3 class="text-2xl font-semibold mb-2">Support</h3>
               <p class="text-gray-600">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                  labore et dolore magna aliqua.
+                I offer dedicated support services designed to ensure your website remains operational and effective. My approach includes proactive maintenance, regular updates, and prompt troubleshooting to quickly resolve any technical issues.
               </p>
           </div>
       </div>
@@ -197,140 +198,182 @@
 
 <!-- /section 3 -->
 <!-- section 4 -->
-<div class="bg-white py-16">
-<div class="container mx-auto text-center">
-  <h2 class="text-3xl font-bold text-gray-900">From the blog</h2>
-  <p class="mt-4 text-gray-600">Learn how to grow your business with our expert advice.</p>
+<div id="project" class="section">
+    <div class="bg-white py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold text-gray-900">Projects</h2>
+            <p class="mt-4 text-gray-600">Explore our featured projects that showcase innovation, creativity, and technical expertise.</p>
+        </div>
+
+        <div class="container mx-auto mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Card 1 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                <div style="display: flex; justify-content: center;">
+                    <img style="width: 192px;" class="object-cover transition-opacity duration-300 hover:opacity-80" src="../images/rock.png" alt="Rock-Paper-Scissors">
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center text-gray-600 text-sm mb-4">
+                        <span>April 12, 2024</span>
+                        <span class="mx-2">•</span>
+                    </div>
+                    <h3 class="text-md font-semibold text-gray-900 transition-colors duration-300 hover:text-indigo-500">
+                        This Rock-Paper-Scissors game is a digital version of the classic hand game, implemented using HTML, CSS, and JavaScript. Players compete against the computer by selecting Rock, Paper, or Scissors.
+                    </h3>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                <div style="display: flex; justify-content: center;">
+                    <img style="width: 192px;" class="object-cover transition-opacity duration-300 hover:opacity-80" src="../images/quiz.png" alt="Capital Quiz App">
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center text-gray-600 text-sm mb-4">
+                        <span>May 16, 2024</span>
+                        <span class="mx-2">•</span>
+                    </div>
+                    <h3 class="text-md font-semibold text-gray-900 transition-colors duration-300 hover:text-indigo-500">
+                        The Capital Quiz App is an interactive, educational game designed to test and enhance users' knowledge of world capitals.
+                    </h3>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                <div style="display: flex; justify-content: center;">
+                    <img style="width: 290px;" class="object-cover transition-opacity duration-300 hover:opacity-80" src="../images/ecoomerce.png" alt="E-commerce Website">
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center text-gray-600 text-sm mb-4">
+                        <span>July 10, 2024</span>
+                        <span class="mx-2">•</span>
+                    </div>
+                    <h3 class="text-md font-semibold text-gray-900 transition-colors duration-300 hover:text-indigo-500">
+                        The Women's Clothing E-commerce Website is a comprehensive online shopping platform tailored for women who seek the latest fashion trends, stylish apparel, and accessories.
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
-<div class="container mx-auto mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
-  <!-- Card 1 -->
-  <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl">
-      <img class="w-full h-48 object-cover transition-opacity duration-300 hover:opacity-80" src="your-image-path-1.jpg" alt="Blog image 1">
-      <div class="p-6">
-          <div class="flex items-center text-gray-600 text-sm mb-4">
-              <span>Mar 16, 2020</span>
-              <span class="mx-2">•</span>
-              <span class="flex items-center">
-                  <img class="h-6 w-6 rounded-full object-cover" src="author-image-1.jpg" alt="Author">
-                  <span class="ml-2">Michael Foster</span>
-              </span>
-          </div>
-          <h3 class="text-lg font-semibold text-gray-900 transition-colors duration-300 hover:text-indigo-500">
-              Boost your conversion rate
-          </h3>
-      </div>
-  </div>
+        
 
-  <!-- Card 2 -->
-  <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl">
-      <img class="w-full h-48 object-cover transition-opacity duration-300 hover:opacity-80" src="your-image-path-2.jpg" alt="Blog image 2">
-      <div class="p-6">
-          <div class="flex items-center text-gray-600 text-sm mb-4">
-              <span>Mar 10, 2020</span>
-              <span class="mx-2">•</span>
-              <span class="flex items-center">
-                  <img class="h-6 w-6 rounded-full object-cover" src="author-image-2.jpg" alt="Author">
-                  <span class="ml-2">Lindsay Walton</span>
-              </span>
-          </div>
-          <h3 class="text-lg font-semibold text-gray-900 transition-colors duration-300 hover:text-indigo-500">
-              How to use search engine optimization to drive sales
-          </h3>
-      </div>
-  </div>
-
-  <!-- Card 3 -->
-  <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl">
-      <img class="w-full h-48 object-cover transition-opacity duration-300 hover:opacity-80" src="your-image-path-3.jpg" alt="Blog image 3">
-      <div class="p-6">
-          <div class="flex items-center text-gray-600 text-sm mb-4">
-              <span>Feb 12, 2020</span>
-              <span class="mx-2">•</span>
-              <span class="flex items-center">
-                  <img class="h-6 w-6 rounded-full object-cover" src="author-image-3.jpg" alt="Author">
-                  <span class="ml-2">Tom Cook</span>
-              </span>
-          </div>
-          <h3 class="text-lg font-semibold text-gray-900 transition-colors duration-300 hover:text-indigo-500">
-              Improve your customer experience
-          </h3>
-      </div>
-  </div>
-</div>
-</div>
+           
 
 <!-- /section 4 -->
 <!-- Contact Section -->
-<section class="py-16">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="bg-white shadow-lg rounded-lg overflow-hidden grid grid-cols-1 md:grid-cols-2">
-          <!-- Left Section (Contact Info) -->
-          <div class="p-8 bg-gray-50">
-              <h2 class="text-3xl font-bold text-gray-900 mb-4">Get in touch</h2>
-              <!-- <p class="text-gray-600 mb-8">
-                  Proin volutpat consequat porttitor cras nullam gravida at. Orci molestie a eu arcu. Sed ut tincidunt
-                  integer elementum id sem. Arcu sed malesuada et magna.
-              </p> -->
-              <ul class="space-y-4">
-                  <li class="flex items-center text-gray-600">
-                      <i class="fas fa-building text-lg text-indigo-500 mr-3"></i>
-                      Prabhat Pattan District Betul(M.P)
-                  </li>
-                  <li class="flex items-center text-gray-600">
-                      <i class="fas fa-phone-alt text-lg text-indigo-500 mr-3"></i>
-                      +91 8817173959
-                  </li>
-                  <li class="flex items-center text-gray-600">
-                      <i class="fas fa-envelope text-lg text-indigo-500 mr-3"></i>
-                      pandeybhumika267@gmail.com
-                  </li>
-              </ul>
-          </div>
+<div id="contact" class="section">
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden grid grid-cols-1 md:grid-cols-2">
+                <!-- Left Section (Contact Info) -->
+                <div class="p-8 bg-gray-50">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-4">Get in touch</h2>
+                    <ul class="space-y-4">
+                        <li class="flex items-center text-gray-600">
+                            <i class="fas fa-building text-lg text-indigo-500 mr-3"></i>
+                            Prabhat Pattan District Betul(M.P)
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <i class="fas fa-phone-alt text-lg text-indigo-500 mr-3"></i>
+                            <!-- WhatsApp Link -->
+                            <a href="#" id="whatsapp-link" class="text-indigo-500 hover:text-indigo-700" style=" color:inherit;">+91 8817173959</a>
 
-          <!-- Right Section (Form) -->
-          <div class="p-8">
-              <form action="#" method="POST">
-                  <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
-                      <!-- First Name -->
-                      <div>
-                          <label for="first-name" class="block text-sm font-medium text-gray-700">First name</label>
-                          <input type="text" id="first-name" name="first-name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500">
-                      </div>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <i class="fas fa-envelope text-lg text-indigo-500 mr-3"></i>
+                            <!-- Gmail Link -->
+                            <a href="#" id="email-link" class="text-indigo-500 hover:text-indigo-700"style="color:inherit;">pandeybhumika267@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
 
-                      <!-- Last Name -->
-                      <div>
-                          <label for="last-name" class="block text-sm font-medium text-gray-700">Last name</label>
-                          <input type="text" id="last-name" name="last-name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500">
-                      </div>
+                <!-- Right Section (Form) -->
+                <div class="p-8">
+                    <form action="#" method="POST">
+                        <!-- Form Fields -->
+                        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
+                            <!-- First Name -->
+                            <div>
+                                <label for="first-name" class="block text-sm font-medium text-gray-700">First name</label>
+                                <input type="text" id="first-name" name="first-name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500">
+                            </div>
 
-                      <!-- Email -->
-                      <div class="col-span-2">
-                          <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
-                          <input type="email" id="email" name="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500">
-                      </div>
+                            <!-- Last Name -->
+                            <div>
+                                <label for="last-name" class="block text-sm font-medium text-gray-700">Last name</label>
+                                <input type="text" id="last-name" name="last-name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500">
+                            </div>
 
-                      <!-- Phone Number -->
-                      <div class="col-span-2">
-                          <label for="phone" class="block text-sm font-medium text-gray-700">Phone number</label>
-                          <input type="tel" id="phone" name="phone" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500">
-                      </div>
+                            <!-- Email -->
+                            <div class="col-span-2">
+                                <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                                <input type="email" id="email" name="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500">
+                            </div>
 
-                      <!-- Message -->
-                      <div class="col-span-2">
-                          <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
-                          <textarea id="message" name="message" rows="4" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"></textarea>
-                      </div>
+                            <!-- Phone Number -->
+                            <div class="col-span-2">
+                                <label for="phone" class="block text-sm font-medium text-gray-700">Phone number</label>
+                                <input type="tel" id="phone" name="phone" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500">
+                            </div>
 
-                      <!-- Submit Button -->
-                      <div class="col-span-2">
-                          <button type="submit" class="w-full py-2 px-4 bg-indigo-600 text-white rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Send message</button>
-                      </div>
-                  </div>
-              </form>
-          </div>
-      </div>
-  </div>
-</section>
+                            <!-- Message -->
+                            <div class="col-span-2">
+                                <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                                <textarea id="message" name="message" rows="4" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"></textarea>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <div class="col-span-2">
+                                <button type="submit" class="w-full py-2 px-4 bg-indigo-600 text-white rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Send message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const form = document.querySelector('form');
+        
+        form.addEventListener('submit', function (e) {
+            e.preventDefault(); // Prevent the form from submitting
+            
+            const firstName = document.getElementById('first-name').value;
+            const lastName = document.getElementById('last-name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const message = document.getElementById('message').value;
+
+            // For now, display an alert with the form data
+            alert(`Thank you ${firstName} ${lastName}! We have received your message and will contact you at ${email} or ${phone}.`);
+
+            // You can reset the form after submission
+            form.reset();
+        });
+
+        // WhatsApp Link
+        const whatsappLink = document.getElementById('whatsapp-link');
+        whatsappLink.addEventListener('click', function (e) {
+            e.preventDefault();
+            const phoneNumber = '+918817173959'; // Add your WhatsApp phone number here
+            const whatsappURL = `https://wa.me/${phoneNumber}`;
+            window.open(whatsappURL, '_blank'); // Opens WhatsApp in a new tab
+        });
+
+        // Email (Gmail) Link
+        const emailLink = document.getElementById('email-link');
+        emailLink.addEventListener('click', function (e) {
+            e.preventDefault();
+            const emailAddress = 'pandeybhumika267@gmail.com';
+            const mailtoLink = `mailto:${emailAddress}`;
+            window.location.href = mailtoLink; // Opens default email client (Gmail or others)
+        });
+    });
+</script>
 
     <%- include('partials/footer')-%>
